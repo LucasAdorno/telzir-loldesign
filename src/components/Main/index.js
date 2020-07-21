@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Container } from './styles';
+// import { Container } from './styles';
 import { Modal } from '../Modal';
 import Header from '../Header';
-import api from '../../services/api'
+import TestBox from '../TestBox';
+import api from '../../services/api';
 
 const Main = () => {
 
@@ -14,27 +15,20 @@ const Main = () => {
 
   const handleChangeModal = async (e) =>{
     const newCity = e.target.value.split(',');
-    setCity(newCity[1]);
-    await setDispcities(validCities.filter(i=>i.ddd !== parseInt(newCity[0])))
+    setCity(newCity);
+    await setDispcities(validCities.filter(i =>  newCity[0] === '18'|| newCity[0] === '17' || newCity[0] === '16' ? i.ddd === 11 : i.ddd !== 11))
     setVisible('-800px');
   }
 
   return (
     <>
-      <Header openModal={() => setVisible('0px')} text={city} />
-      <Container className="content">
-        <h1>Teste agora um dos planos FaleMais!</h1>
-        <div className="testBox">
-          <select>
-            {dispcities.map(i=><option>{i.cidade}</option>)}
-          </select>
-        </div>
-      </Container>
+      <Header openModal={() => setVisible('0px')} text={city[1]} />
+      <TestBox defaultDdd={city[0]} cities={dispcities} />
       <Modal visible={visible}>
         <div>
           <h1>Selecione a sua cidade!</h1>
           <select onChange={(e) => handleChangeModal(e)}>
-            {validCities.map((i) => <option value={[i.ddd, i.cidade]}>{i.cidade}</option>)}
+            {validCities.map((i) => <option key={i.cidade} value={[i.ddd, i.cidade]}>{i.cidade}</option>)}
           </select>
         </div>
       </Modal>

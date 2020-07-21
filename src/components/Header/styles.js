@@ -2,9 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
 
-    @import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
-
-
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -26,7 +26,7 @@ export const Modal = styled.div`
   div h1{
     text-align: center;
     font-size: 44px;
-    font-family: sans-serif;
+    font-family: 'Expletus Sans', cursive;
     color: #fff;
   }
 
