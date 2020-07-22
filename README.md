@@ -6,7 +6,7 @@
 ## Built with:
 - ReactJs,
 - Styled-components
-- A lot of coffe :)
+- A lot of coffee :)
 
 ## Instructions
 - Open your terminal.
