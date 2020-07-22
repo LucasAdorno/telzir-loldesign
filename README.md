@@ -1,6 +1,6 @@
 # Telzir FaleMais
 
-### **Telzir FaleMais** Try the new Telzir phone plans! Select the city of origin, the destination city, the minutes of the call and the best FaleMais plan for you.
+### _Telzir FaleMais_ - Try the new Telzir phone plans! Select the city of origin, the destination city, the minutes of the call and the best FaleMais plan for you.
 ### Link: https://telzirlol.herokuapp.com/
 
 ## Built with:
