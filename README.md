@@ -1,7 +1,7 @@
 # Telzir FaleMais
 
 ### **Telzir FaleMais** Try the new Telzir phone plans! Select the city of origin, the destination city, the minutes of the call and the best FaleMais plan for you.
-### Link: https://anotereact.herokuapp.com
+### Link: https://telzirlol.herokuapp.com/
 
 ## Built with:
 - ReactJs,
