@@ -20,14 +20,15 @@ export const Modal = styled.div`
     width: 600px;
     height: 240px;
     border-radius: 40px;
-    background: #ff00ff;
+    background: #eeee33;
   }
 
   div h1{
     text-align: center;
-    font-size: 44px;
-    font-family: 'Expletus Sans', cursive;
-    color: #fff;
+    font-size: 40px;
+    font-family: 'Comfortaa', cursive;
+    text-shadow: 1px 1px 1px #999;
+    color: #fafafa;
   }
 
   select{
@@ -45,10 +46,7 @@ export const Modal = styled.div`
     }
 
     div h1{
-     text-align: center;
      font-size: 32px;
-     font-family: sans-serif;
-     color: #fff;
     }
   }
 
