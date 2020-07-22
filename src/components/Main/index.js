@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import { Container } from './styles';
 import { Modal } from '../Modal';
 import Header from '../Header';
 import TestBox from '../TestBox';
@@ -16,7 +15,7 @@ const Main = () => {
   const handleChangeModal = async (e) =>{
     const newCity = e.target.value.split(',');
     setCity(newCity);
-    await setDispcities(validCities.filter(i =>  newCity[0] === '18'|| newCity[0] === '17' || newCity[0] === '16' ? i.ddd === 11 : i.ddd !== 11))
+    await setDispcities(validCities.filter(i =>  newCity[0] === '11' ? i.ddd !== 11 : i.ddd === 11))
     setVisible('-800px');
   }
 
