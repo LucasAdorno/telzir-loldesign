@@ -20,8 +20,8 @@
 ## Preview
 
 <div align="center">
-  <img src="src/assets/desktop.png" width="500">
-  <img src="src/assets/mobile.png" width="367">
+  <img src="src/assets/desktop.png" width="767">
+  <img src="src/assets/mobile.png" width="307">
 </div>
 
 
