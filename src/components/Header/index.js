@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from './styles';
 
-function Header (props){
+const Header = (props) => {
 
   return(
     <Container>
