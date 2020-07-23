@@ -8,7 +8,7 @@ const TestBox = (props) => {
 	const [ddd, setDdd] = useState(0);
 	const [plan, setPlan] = useState(0);
 	const [prices, setPrices] = useState([0,0]);
-	const [results, setResults] = useState('-800px');
+	const [results, setResults] = useState('-1800px');
 	const inputRef = useRef(null)
 	const dddRef = useRef(null)
 	const planRef = useRef(null)
@@ -20,7 +20,7 @@ const TestBox = (props) => {
 		setDdd(parseInt(dddRef.current.value));
 		setPlan(planRef.current.value);
 
-		inputRef.current.addEventListener('keyup',(e) => {
+		inputRef.current.addEventListener('change',(e) => {
 			setMin(Number(inputRef.current.value));
 		});
 		dddRef.current.addEventListener('change',(e) => {
@@ -103,7 +103,7 @@ const TestBox = (props) => {
 				<Button onClick={()=>handleClickButton()} text='Conferir' background={'#ffd53f'} />
 			</div>
 		</Container>
-		<Results onClick={()=>setResults('-800px')} visible={results} valor={prices} plan={plan} />
+		<Results onClick={()=>setResults('-1800px')} visible={results} valor={prices} plan={plan} />
 		</>
 	);
 }

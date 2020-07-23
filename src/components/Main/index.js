@@ -16,7 +16,7 @@ const Main = () => {
     const newCity = e.target.value.split(',');
     setCity(newCity);
     await setDispcities(validCities.filter(i =>  newCity[0] === '11' ? i.ddd !== 11 : i.ddd === 11))
-    setVisible('-800px');
+    setVisible('-1800px');
   }
 
   return (

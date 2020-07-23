@@ -10,7 +10,7 @@ export const Container = styled.div`
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
   top:${props => props.visible};
-  transition: all 1s;
+  transition: all 2s;
 
   div{
     display: flex;
